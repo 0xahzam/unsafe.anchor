@@ -13,7 +13,7 @@
 
 ## errors found:
 
-- init is missing from initialisation function which can let anyone set any id and overwrite data
+- init functions allows any id to be set which could lead to conflicts or overwritting, need better handling to make sure it stays unique
 - absence of check to prevent sender and reciever being the same account
 - missing ownership check if sender is the owner of the account whose points are being affected
 - integer overflow because of using u16 in points increase or decrease which can lead to loss of points
